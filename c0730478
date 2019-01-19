@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace week2_c0730478
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            StudentInformation _saksham = new StudentInformation("saksham", 4.0, 90);
+            StudentInformation _Arun = new StudentInformation("Arun", 3.0, 60);
+            StudentInformation _Sohit = new StudentInformation("Sohit", 3.6, 40);
+            StudentInformation _Harjeet = new StudentInformation("Harjeet", 2.6, 50);
+            StudentInformation _Kunal = new StudentInformation("Kunal", 3.5, 60);
+        }
+    }
+    public class StudentInformation
+    {
+
+        public string Name;
+        public double GPA;
+        public int Attendance;
+        public StudentInformation(string aName, double bGPA, int cAttendence)
+        {
+            Name = aName;
+            GPA = bGPA;
+            Attendance = cAttendence;
+        }
+    }
+}
